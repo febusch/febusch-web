@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112540747-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112540747-1');
+    </script>
+    
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <title>Felix Busch</title>
+    <link rel="shortcut icon" href="#"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do">
+    <link href="https://fonts.googleapis.com/css?family=Candal" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+</head>
+
+<body>
+    
+<div class="container">
+    
+    <!-- header -->
+    <header class="item-1">
+        <div class="btn-play-wrapper">
+            <i id="btn-play" class="material-icons">play_circle_filled</i>
+        </div>
+    </header>
+    
+    <!-- decorative head -->
+    <div class="myhead">
+        {% include "head.svg" %}
+    </div>
+    
+    <!-- decorative containers -->
+    <div class="intro-border"></div>
+    <div class="head-border"></div>
+    
+    <!-- intro content section -->
+    <div class="intro">
+        <h1><span>Hi! My name is Felix.</span></h1>
+        <p>I'm a sociologist with a passion for web technology and data science.</p>
+    </div>
+    
+    <!-- Contact links -->
+    <div class="icons">
+        <a id="btn-twitter" target="_blank" href="https://twitter.com/felixbusch3">{% include "icn-twitter.svg" %}</a>
+        <a id="btn-mail" href="mailto:felix.busch@nuffield.ox.ac.uk">{% include "icn-mail.svg" %}</a>
+        <a id="btn-linkedin" target="_blank" href="https://www.linkedin.com/in/felix-busch-45157194/">{% include "icn-linkedin.svg" %}</a>   
+    </div>
+    
+    <!-- Nav tiles -->
+    <div class="tile tile-research" id="#cnt-research">
+        <i class="material-icons tile-font-not-active">school</i><br>
+        <span class="tile-font-not-active">RESEARCH</span>
+    </div>
+    <div class="tile tile-vita" id="#cnt-vita">
+        <i class="material-icons tile-font-not-active">cake</i><br>
+        <span class="tile-font-not-active">VITA</span>
+    </div>
+    <div class="tile tile-projects" id="#cnt-projects">
+        <i class="material-icons tile-font-not-active">golf_course</i><br>
+        <span class="tile-font-not-active">PROJECTS</span>
+    </div>
+    
+    <!-- Main content sections -->
+    <section class="content" id="cnt-research">
+        <p>I'm a PhD candidate in sociology at Nuffield College and the University of Oxford. In my dissertation, I am concerned with the extent to which gender segregated labor markets lead to inequalities in the wage structure. I have a particular interest in the question if typically female jobs are under-valued, and if so, why. Part of my work has recently been <a href="https://doi.org/10.1093/sf/sox077" target="_blank">published</a> in Social Forces.</p>
+    </section>
+    <section class="content" id="cnt-vita">
+        <p>I received my BA in Politics and German Literature from the University of Heidelberg in 2011. After graduating with an MA in Politics from <a href="https://www.upf.edu/" target="_blank">Pompeu Fabra University</a>, and with an MA in Politics and Administration from the <a href="https://www.uni-konstanz.de/" target="_blank">University of Konstanz</a>, I went on in 2013 to work half a year at <a href="https://www.eurofound.europa.eu" target="_blank">Eurofound</a>.</p>
+        <p>I took on my current position as PhD student in sociology at <a href="https://www.nuffield.ox.ac.uk/" target="_blank">Nuffield College</a> and the University of Oxford in 2014. During spring quarter 2017, I was a Visiting Student Researcher at the <a href="http://inequality.stanford.edu/" target="_blank">Stanford Center on Poverty and Inequality</a>. In February 2018, I am starting to work as an academic assistant for the <a href="http://www.stellenmarktmonitor.uzh.ch/en.html" target="_blank">Swiss Job Market Monitor</a> at the University of Zurich.</p>
+    </section>
+    <section class="content" id="cnt-projects">
+        <p>I love building web tools that help users making complex decisions. My focus is on scenarios in which I can distill a wealth of relevant information to the bits and pieces that are digestible for everyday use.</p>
+        <p>My first tool has been <a href="http://www.choicelab.de/schools" target="_blank">school-map</a>, which is an interactive map that helps teaching professionals, planners, and aspiring teachers by showing them where schools are located in the German landscape. All data has been collected through Selenium, and the map is implemented with leaflet.js.</p>
+        <p>A second project that is currently being developed is <a href="http://www.choicelab.de/" target="_blank">ChoiceLab</a>, which will be a platform to assist school graduates and students to orientate in today's world of work and education. I rely on large social survey data to feed ChoiceLab. The application is based on Python Flask, a PostreSQL data base, and it is hosted on Heroku.</p>
+    </section>
+    
+    <!-- footer -->
+    <footer>
+        <span>&copy; Felix Busch 2018</span>
+    </footer>
+    
+</div> <!-- end grid container -->
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
