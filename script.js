@@ -115,6 +115,14 @@ function main() {
             tile.children("i, span").removeClass("tile-font-not-active").addClass("tile-font-active");
         }
     }
+    
+    // load SVG sources
+    $(function(){
+        $(".myhead").load("img/head.svg");
+        $("#btn-twitter").load("img/icon-twitter.svg");
+        $("#btn-mail").load("img/icon-mail.svg");
+        $("#btn-linkedin").load("img/icon-linkedin.svg");
+    });
    
 } //end main
 
