@@ -72,12 +72,14 @@ function main() {
                     $(".tile-projects").addClass("tile-projects-animate"); 
                 }, 250);
             
-            // move icons
-            var translateString = "translateY(" + ($(".tile").offset().top - $("#btn-twitter").offset().top) + "px)"; // calculates distance for translateY
-            setTimeout(function() {
-                $(".icons").css("transform", translateString);
-                }, 600);
-
+            // move icons (if in landscape mode)
+            if(window.innerWidth > window.innerHeight){
+                var translateString = "translateY(" + ($(".tile").offset().top - $("#btn-twitter").offset().top) + "px)"; // calculates distance for translateY
+                setTimeout(function() {
+                    $(".icons").css("transform", translateString);
+                    }, 600);
+            }
+            
             // animate scroll to content
             $('html, body').animate(
                 { scrollTop: $(".tile").offset().top-20 },
