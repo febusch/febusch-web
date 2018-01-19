@@ -131,6 +131,7 @@ function main() {
         $("#btn-mail").load("img/icon-mail.svg");
         $("#btn-linkedin").load("img/icon-linkedin.svg");
     });
+
    
 } //end main
 
