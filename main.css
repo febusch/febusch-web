@@ -41,7 +41,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 16% 23% 11% 12% 16% 7% 15%;
+    grid-template-columns: 16% 23% 11% 12% 20% 3% 15%;
     grid-template-rows: 10vh 55vh 25vh 10vh 5vh;
 }
 
@@ -239,7 +239,11 @@ body {
     .myhead {
         grid-column: 2 / 7;
         grid-row: 3 / 4;
-    }    
+    }
+    
+    .myhead > svg {
+        right: 1em;
+    }      
 }
 
 @media screen and (orientation: portrait) and (min-width: 500px) {
