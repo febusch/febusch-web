@@ -503,8 +503,8 @@ body {
     align-items: center;
     justify-content: flex-end;
     transition: transform 1s ease;
+    z-index: 1;
 }
-
 
 @media screen and (orientation: portrait) {
     .icons {
@@ -640,6 +640,7 @@ body {
 
 .contact-info h1 {
     font-family: 'Vollkorn', serif;
+    margin-right: 3em;
 }
 
 .contact-info h2 {

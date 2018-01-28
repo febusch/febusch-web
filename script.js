@@ -139,14 +139,16 @@ function main() {
            opacity:1
        }, 200, "linear")
     });
+    
     $("#contact-x").click(function() { //hide if X button clicked
        $(".contact-wrapper").hide(); 
     });
+    
     $(".contact-wrapper").click(function(e) { //hide if outer gray area clicked
         if (e.target.className == "contact-wrapper") {
             $(".contact-wrapper").hide();
         }
-    });
+    }); 
    
 } //end main
 
