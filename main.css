@@ -575,6 +575,10 @@ body {
     fill: white;
 }
 
+.icons a:hover {
+    cursor: pointer;
+}
+
 @media screen and (orientation: portrait) {
     #btn-twitter {
         background-color: #1DA1F2; /*Twitter brand color*/
@@ -591,6 +595,64 @@ body {
     .icons a svg {
         fill: white;
     }
+}
+
+/*--- Contact info ---*/
+
+.contact-wrapper {
+    grid-column: 1 / 8;
+    grid-row: 1 / 6;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info {
+    background: linear-gradient(120deg, #FAFAFA, #B7B7B7 80%);
+    width: 35vw;
+    min-height: 50px;
+    z-index: 2;
+    opacity: 1;
+    position: relative;
+    padding: 2em 3em 3em 3em;
+    border: 2em solid #919191;
+    border-radius: 1em;
+}
+
+#contact-x {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 3em;
+    background-color: #31A95F;
+}
+
+#contact-x:hover {
+    background-color: #2C9253;
+    cursor: pointer;
+}
+
+.contact-info {
+    font-family: 'Catamaran', sans-serif;
+}
+
+.contact-info h1 {
+    font-family: 'Vollkorn', serif;
+}
+
+.contact-info h2 {
+    margin-bottom: 0;
+}
+
+.contact-info p {
+    margin: 0 0 0.5em 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #E63434;
 }
 
 /*--- Footer ---*/

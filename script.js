@@ -1,6 +1,12 @@
 // wrapper function
 function main() {
     
+    // load SVG sources
+    $(".myhead").load("img/head.svg");
+    $("#btn-twitter").load("img/icon-twitter.svg");
+    $("#btn-mail").load("img/icon-mail.svg");
+    $("#btn-linkedin").load("img/icon-linkedin.svg");    
+    
     // define variable space
     var click_counter = 0,
         paths = ["4402", "4730", "4732", "4718", "4554", "4952", "4384", "4392", "4472", "4784", "4454", "4456"],
@@ -124,11 +130,23 @@ function main() {
         }
     }
     
-    // load SVG sources
-    $(".myhead").load("img/head.svg");
-    $("#btn-twitter").load("img/icon-twitter.svg");
-    $("#btn-mail").load("img/icon-mail.svg");
-    $("#btn-linkedin").load("img/icon-linkedin.svg");
+    // toggle contact information
+    $("#btn-mail").click(function() { //first sets to flex then fades in
+       $(".contact-wrapper").css({
+           "opacity":"0",
+           "display":"flex",
+       }).animate({
+           opacity:1
+       }, 200, "linear")
+    });
+    $("#contact-x").click(function() { //hide if X button clicked
+       $(".contact-wrapper").hide(); 
+    });
+    $(".contact-wrapper").click(function(e) { //hide if outer gray area clicked
+        if (e.target.className == "contact-wrapper") {
+            $(".contact-wrapper").hide();
+        }
+    });
    
 } //end main
 
