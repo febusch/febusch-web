@@ -605,20 +605,43 @@ body {
     background-color: rgba(0,0,0,0.7);
     z-index: 1;
     display: none;
-    align-items: center;
-    justify-content: center;
+}
+
+.contact-wrapper-expanded {
+    grid-column: 1 / 8;
+    grid-row: 1 / 7;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
 }
 
 .contact-info {
     background: linear-gradient(120deg, #FAFAFA, #B7B7B7 80%);
-    width: 35vw;
+    width: 30vw;
     min-height: 50px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
     opacity: 1;
-    position: relative;
     padding: 2em 3em 3em 3em;
     border: 2em solid #919191;
     border-radius: 1em;
+}
+
+@media screen and (orientation: portrait) { /*portrait screens*/
+    .contact-info {
+        width: 50vw;
+    }
+    
+    .contact-wrapper {
+        grid-row: 1 / 7;
+    }
+
+    .contact-wrapper-expanded {
+        grid-row: 1 / 8;
+    }
 }
 
 #contact-x {

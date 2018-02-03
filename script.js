@@ -56,7 +56,7 @@ function main() {
         }
     });
     
-    // move navbar to vertical
+    // change page when content is expanded via navigation tiles
     $(".tile").click(function() {
         
         var tile = $(this); // to be passed on to mainContent()
@@ -64,6 +64,9 @@ function main() {
         changeTileColor(tile); // change to active tile color
 
         if (navVertical == false) { // if not vertical
+            
+            // change class of contact info wrapper
+            $(".contact-wrapper").addClass("contact-wrapper-expanded").removeClass("contact-wrapper");
 
             // move nav bar
             $(".container").addClass("container-content-expanded");
@@ -131,22 +134,26 @@ function main() {
     }
     
     // toggle contact information
-    $("#btn-mail").click(function() { //first sets to flex then fades in
-       $(".contact-wrapper").css({
-           "opacity":"0",
-           "display":"flex",
-       }).animate({
-           opacity:1
-       }, 200, "linear")
+    var contactWrapperClass = ".contact-wrapper",
+        contactWrapperName = "contact-wrapper";
+    
+    $("#btn-mail").click(function() { //first sets to flex then fades in  
+        
+        if ($(".container").children().hasClass("contact-wrapper-expanded")) {
+            contactWrapperClass = ".contact-wrapper-expanded";
+            contactWrapperName = "contact-wrapper-expanded";
+        }
+        
+        $(contactWrapperClass).fadeIn(200);
     });
     
     $("#contact-x").click(function() { //hide if X button clicked
-       $(".contact-wrapper").hide(); 
+       $(contactWrapperClass).hide(); 
     });
     
-    $(".contact-wrapper").click(function(e) { //hide if outer gray area clicked
-        if (e.target.className == "contact-wrapper") {
-            $(".contact-wrapper").hide();
+    $(contactWrapperClass).click(function(e) { //hide if outer gray area clicked
+        if (e.target.className == contactWrapperName) {
+            $(contactWrapperClass).hide();
         }
     }); 
    
