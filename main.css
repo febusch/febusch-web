@@ -226,7 +226,6 @@ body {
     border-width: 0px 0px 1px 0px;
 }
 
-/*
 @media screen and (orientation: portrait) {
     .myhead {
         grid-column: 2 / 7;
@@ -237,7 +236,6 @@ body {
         right: 1em;
     }      
 }
-*/
 
 /*--- Animation transitions ---*/
 
