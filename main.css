@@ -221,18 +221,9 @@ body {
 .myhead {
     grid-column: 4 / 6;
     grid-row: 2 / 3;
-    position: relative;
     border-style: solid;
     border-color: black;
-    border-width: 0px 0px 1px 0px; 
-}
-
-.myhead > svg {
-    width: 70%;
-    height: auto;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    border-width: 0px 0px 1px 0px;
 }
 
 @media screen and (orientation: portrait) {
@@ -244,13 +235,6 @@ body {
     .myhead > svg {
         right: 1em;
     }      
-}
-
-@media screen and (orientation: portrait) and (min-width: 500px) {
-    .myhead > svg {
-        width: 60%;
-        height: auto;
-    }  
 }
 
 /*--- Animation transitions ---*/

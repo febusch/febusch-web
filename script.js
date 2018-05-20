@@ -1,11 +1,5 @@
 // wrapper function
-function main() {
-    
-    // load SVG sources
-    $(".myhead").load("img/head.svg");
-    $("#btn-twitter").load("img/icon-twitter.svg");
-    $("#btn-mail").load("img/icon-mail.svg");
-    $("#btn-linkedin").load("img/icon-linkedin.svg");    
+function main() {   
     
     // define variable space
     var click_counter = 0,
