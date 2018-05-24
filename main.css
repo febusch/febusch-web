@@ -521,26 +521,17 @@ body {
     }
 }
 
+.svg-icon-wrapper {
+    width: 55%;
+    height: 55%;
+}
+
 .icons a svg {
     fill: #4B4B4B;
 }
 
 .icons a:nth-child(1) {
     margin-top: 0px;
-}
-
-#icon-twitter {
-    width: 80%;
-    transform: translate(2px, 2px);
-}
-
-#icon-linkedin {
-    width: 45%;
-    transform: translate(1px, 0px);
-}
-
-#icon-mail {
-    width: 50%;
 }
 
 #btn-twitter:hover {

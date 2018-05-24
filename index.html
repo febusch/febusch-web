@@ -15,7 +15,7 @@
     <!-- meta -->
     <meta charset="UTF-8">
     <title>Felix Busch</title>
-    <link rel="icon" type="image/png" href="img/icn-tab.png"/>
+    <link rel="icon" type="image/png" href="img_aux/icn-tab.png"/>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!-- Custom CSS -->
@@ -58,9 +58,15 @@
     
     <!-- Icon list -->
     <div class="icons">
-        <a id="btn-twitter" target="_blank" href="https://twitter.com/felixbusch3"></a>
-        <a id="btn-mail"></a>
-        <a id="btn-linkedin" target="_blank" href="https://www.linkedin.com/in/felix-busch-45157194/"></a>
+        <a id="btn-twitter" target="_blank" href="https://twitter.com/felixbusch3">
+            <svg class="svg-icon-wrapper"><use href="#icon-twitter"/></svg>
+        </a>
+        <a id="btn-mail">
+            <svg class="svg-icon-wrapper"><use href="#icon-mail"/></svg>
+        </a>
+        <a id="btn-linkedin" target="_blank" href="https://www.linkedin.com/in/felix-busch-45157194/">
+            <svg class="svg-icon-wrapper"><use href="#icon-linkedin"/></svg>
+        </a>
     </div>
     
     <!-- Nav tiles -->
@@ -100,8 +106,8 @@
             <p>Soziologisches Institut<br>
             Universität Zürich<br>
             Andreasstrasse 15<br>
-            8050 Zürich<br></p>
-            Email to <a href="mailto:felix.busch@nuffield.ox.ac.uk">felix.busch@nuffield.ox.ac.uk</a>
+            CH - 8050 Zürich<br></p>
+            Email to <a href="mailto:busch@soziologie.uzh.ch">busch@soziologie.uzh.ch</a>
         </div>
     </div>
     
@@ -114,6 +120,8 @@
     
     <!-- SVGs -->
     <div style="display: none">
+        
+        <!-- head -->
         <svg id="svg-head" xmlns="http://www.w3.org/2000/svg" 
              x="30%" y="0" width="70%" height="100%"
              viewBox="-30 0 230.29202 203.64659"
@@ -505,6 +513,41 @@
                d="m 2328.375,510.3622 6,-3.25 2.75,-11 4.375,-5.25 4.25,-2.25 4.5,-3.25 -5.0312,-2.75 -6.3438,-2.9375 -8.9121,-2.99772 -4.7754,-1.18978 z"
                id="path4247" />
             </g>
+        </svg>
+        
+        <!-- icon: Twitter -->
+        <svg id="icon-twitter"
+             xmlns="http://www.w3.org/2000/svg"
+             version="1.1"
+             viewBox="0 0 350 350">
+            <path transform="translate(-15,30)"
+            class="st1"
+            d="m 132.50761,300.62975 c 130.89117,0 202.51348,-108.5439 202.51348,-202.513478 0,-3.05366 0,-6.10732 -0.13881,-9.161 13.8803,-9.9938 25.95615,-22.62487 35.53356,-36.92158 -12.76987,5.69092 -26.51136,9.4386 -40.94687,11.24304 14.71311,-8.74459 25.95615,-22.76368 31.36946,-39.42004 -13.74149,8.18938 -29.00981,14.0191 -45.24975,17.21157 -13.04748,-13.8803 -31.50827,-22.48608 -51.9123,-22.48608 -39.28123,0 -71.2059,31.92468 -71.2059,71.20591 0,5.55212 0.69401,10.965438 1.80443,16.239938 C 135.14486,103.11317 82.677348,74.658572 47.560206,31.629662 c -6.10733,10.54902 -9.577402,22.76368 -9.577402,35.81116 0,24.70693 12.631066,46.498988 31.647069,59.268848 -11.659447,-0.4164 -22.624879,-3.60888 -32.202281,-8.88338 0,0.2776 0,0.55521 0,0.97162 0,34.42312 24.568118,63.29414 57.048006,69.81788 -5.96852,1.66562 -12.21466,2.49844 -18.73839,2.49844 -4.580503,0 -9.022196,-0.4164 -13.325088,-1.24922 9.022191,28.3158 35.394748,48.85864 66.48661,49.41384 -24.42932,19.15481 -55.104769,30.53665 -88.417474,30.53665 -5.69092,0 -11.38184,-0.27761 -16.933958,-0.97162 31.369464,19.98763 68.84626,31.78587 108.960312,31.78587"
+            id="path3516" />
+        </svg>
+        
+        <!-- icon: Mail -->
+        <svg id="icon-mail"
+             xmlns="http://www.w3.org/2000/svg"
+             version="1.1"
+             viewBox="0 0 350 350">
+            <path
+            style="fill:none"
+            id="path3686"
+            d="m -2,330 24,0 0,24 -24,0 z" />
+            <path
+            id="path3688"
+            d="M 315,35 35,35 C 15.75,35 0.175,50.75 0.175,70 L 0,280 c 0,19.25 15.75,35 35,35 l 280,0 c 19.25,0 35,-15.75 35,-35 L 350,70 C 350,50.75 334.25,35 315,35 Z m 0,245 -280,0 0,-175 140,87.5 140,-87.5 0,175 z M 175,157.5 35,70 315,70 175,157.5 Z" />
+        </svg>
+        
+        <!-- icon: LinkedIn -->
+        <svg id="icon-linkedin"
+             xmlns="http://www.w3.org/2000/svg"
+             version="1.1"
+             viewBox="0 0 350 350">
+            <path transform="matrix(0.81373208,0,0,0.81373208,-5.2667999e-7,-4.0739272e-4)"
+            d="m 430.117,261.543 0,159.017 -92.188,0 0,-148.367 c 0,-37.271 -13.334,-62.707 -46.703,-62.707 -25.473,0 -40.632,17.142 -47.301,33.724 -2.432,5.928 -3.058,14.179 -3.058,22.477 l 0,154.873 -92.219,0 c 0,0 1.242,-251.285 0,-277.32 l 92.21,0 0,39.309 c -0.187,0.294 -0.43,0.611 -0.606,0.896 l 0.606,0 0,-0.896 c 12.251,-18.869 34.13,-45.824 83.102,-45.824 60.673,-0.001 106.157,39.636 106.157,124.818 z M 52.183,9.558 C 20.635,9.558 0,30.251 0,57.463 c 0,26.619 20.038,47.94 50.959,47.94 l 0.616,0 c 32.159,0 52.159,-21.317 52.159,-47.94 C 103.128,30.251 83.734,9.558 52.183,9.558 Z M 5.477,420.56 l 92.184,0 0,-277.32 -92.184,0 0,277.32 z"
+            id="path3497" />
         </svg>
 
     </div> <!-- end SVGs -->
