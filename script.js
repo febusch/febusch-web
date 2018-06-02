@@ -54,7 +54,6 @@ function main() {
     $(".tile").click(function() {
         
         var tile = $(this); // to be passed on to mainContent()
-        
         changeTileColor(tile); // change to active tile color
 
         if (navVertical == false) { // if not vertical

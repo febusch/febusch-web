@@ -313,7 +313,7 @@ body {
 /*--- Navigation tiles ---*/
 
 .tile {
-    margin: 30px 5% 0 5%;
+    margin: 30px 1.5em 0 1.5em;
     grid-row: 3 / 4;
     transition: transform 1.5s;
     display: flex;
@@ -335,22 +335,46 @@ body {
     font-size: 1.7em;
 }
 
+.tile-vita-animate {
+    transform: translate(calc(-100% - 3em ), 110%);
+}
+
+.tile-projects-animate {
+    transform: translate(calc(-200% - 6em ), 220%);
+}
+
 @media screen and (orientation: portrait) { /*for small smartphones*/
     .tile {
         grid-row: 4 / 5;
-        margin: 20px 5%;
+        margin: 20px 0.5em;
     }
+    
+    .tile-vita-animate {
+        transform: translate(calc(-100% - 1em ), 110%);
+    }
+
+    .tile-projects-animate {
+        transform: translate(calc(-200% - 2em ), 220%);
+    }    
 }
 
 @media screen and (orientation: portrait) and (min-width: 340px)  { /*for larger smartphones*/
     .tile {
-        margin: 30px 5%;
-    }  
+        margin: 30px 1em;
+    }
+    
+    .tile-vita-animate {
+        transform: translate(calc(-100% - 2em ), 110%);
+    }
+
+    .tile-projects-animate {
+        transform: translate(calc(-200% - 4em ), 220%);
+    }
 }
 
-@media screen and (orientation: portrait) and (min-width: 576px)  {
+@media screen and (orientation: portrait) and (min-width: 576px)  { /* e.g. iPad Pro */
     .tile {
-        margin: 40px 7% 0 7%;
+        margin: 40px 2em 0 2em;
     }    
     
     .tile i {
@@ -360,7 +384,15 @@ body {
     .tile span {
         font-family: 'Candal', sans-serif;
         font-size: 1.7em;
-    }    
+    }
+    
+    .tile-vita-animate {
+        transform: translate(calc(-100% - 4em ), 110%);
+    }
+
+    .tile-projects-animate {
+        transform: translate(calc(-200% - 8em ), 220%);
+    }
 }
 
 .tile:hover {
@@ -399,38 +431,6 @@ body {
 
 .tile-projects {
     grid-column: 5 / 7;
-}
-
-.tile-research-animate {
-    transform: translate(0, 0);
-}
-
-.tile-vita-animate {
-    transform: translate(calc(-100% - 10%), 110%);
-}
-
-.tile-projects-animate {
-    transform: translate(calc(-200% - 20%), 220%);
-}
-
-@media screen and (orientation: portrait) {
-    .tile-vita-animate {
-        transform: translate(calc(-100% - 10%), 110%);
-    }
-
-    .tile-projects-animate {
-        transform: translate(calc(-200% - 20%), 220%);
-    }
-}
-
-@media screen and (orientation: portrait) and (min-width: 576px) {
-    .tile-vita-animate {
-        transform: translate(calc(-100% - 14%), 110%);
-    }
-
-    .tile-projects-animate {
-        transform: translate(calc(-200% - 28%), 220%);
-    }
 }
 
 
