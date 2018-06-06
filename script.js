@@ -22,7 +22,7 @@ function main() {
             var path = "#path" + paths[i],
                 className = "path" + paths[i];
             $(path).removeClass("animate-fast").addClass("animate-slow");
-            $(path).css("transform", "translate(0px, 0px) rotate(0deg)")
+            $(path).css("transform", "translate(0px, 0px) rotate(0deg)");
         }
     }
     
